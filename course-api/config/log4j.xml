@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+		<param name="Threshold" value="ALL" />
+		<layout class="org.apache.log4j.PatternLayout">
+				<param name="ConversionPattern" value="%5p [%d] %C (%M:%L) - %m%n"/>
+		</layout>
+	</appender>
+	
+	<root>
+		<priority value="info"></priority>
+		<appender-ref ref="INFOS" />
+		<appender-ref ref="CONSOLE" />
+	</root>
+    
+	<appender name="INFOS" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="DatePattern" value="yyyyMMdd'.txt'" />
+        <param name="Threshold" value="ALL" />
+		<param name="File" value="./log/process/log" />
+		<param name="Append" value="true" />
+		<layout class="org.apache.log4j.PatternLayout">
+				<param name="ConversionPattern" value="%5p [%d] %C (%M:%L) - %m%n"/>
+		</layout>
+	</appender>
+	
+	<category name="CDR_EXPORT" additivity="false">
+        <priority value="info"></priority>
+		<appender-ref ref="CDR_EXPORT_FILE" />
+		<appender-ref ref="CONSOLE" />
+	</category> 
+	
+	<appender name="CDR_EXPORT_FILE" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="Threshold" value="ALL" />
+		<param name="File" value="./log/cdr/log" />
+		<param name="Append" value="true" />
+		<param name="DatePattern" value="yyyyMMdd'.txt'" />
+		<layout class="org.apache.log4j.PatternLayout">
+		</layout>
+	</appender>
+	
+<!-- 	<category name="ADD_SCORE_EXPORT" additivity="false"> -->
+<!--         <priority value="info"></priority> -->
+<!-- 		<appender-ref ref="ADD_SCORE_EXPORT_FILE" /> -->
+<!-- 		<appender-ref ref="CONSOLE" /> -->
+<!-- 	</category>  -->
+	
+<!-- 	<appender name="ADD_SCORE_EXPORT_FILE" class="com.elc.cdr1.CDRAppender"> -->
+<!-- 		<param name="Threshold" value="ALL" /> -->
+<!-- 		<param name="File" value="./score/score.tmp" /> -->
+<!-- 		<param name="DatePattern" value="yyyyMMdd-HHmm" /> -->
+<!-- 		<param name="IndexPattern" value=".%03d" /> -->
+<!-- 		<param name="RolledPeriodMillis" value="600000" /> -->
+<!-- 		<param name="MaxRecord" value="10000" /> -->
+<!-- 		<param name="RolledFileNamePattern" value="score%d%i.txt" /> -->
+<!-- 		<param name="RolledFolderDatePattern" value="" /> -->
+<!-- 		<param name="AutoDeleteEmptyFile" value="true" /> -->
+<!-- 	</appender> -->
+
+</log4j:configuration>

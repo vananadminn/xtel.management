@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/xtel.management</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.show_sql">true</property>
+        <mapping class="com.xmedia.springstart.model.Employee"/>
+        <mapping class="com.xmedia.springstart.model.EmployeeProject"/>
+        <mapping class="com.xmedia.springstart.model.User"/>
+        <mapping class="com.xmedia.springstart.model.Project"/>
+        <mapping class="com.xmedia.springstart.model.Role"/>
+        <mapping class="com.xmedia.springstart.model.Cv"/>
+        <mapping class="com.xmedia.springstart.model.Customers"/>
+        <mapping class="com.xmedia.springstart.model.CategorySkill"/>
+        <mapping class="com.xmedia.springstart.model.Skill"/>
+        <mapping class="com.xmedia.springstart.model.CvInterviewN"/>
+        <mapping class="com.xmedia.springstart.model.Position"/>
+        <mapping class="com.xmedia.springstart.model.WorkingProcess"/>
+        <mapping class="com.xmedia.springstart.model.EmployeePosition"/>
+        <mapping class="com.xmedia.springstart.model.EmployeeSkill"/>
+        <mapping class="com.xmedia.springstart.model.Experience"/>
+        <mapping class="com.xmedia.springstart.model.EmployeeExperience"/>
+
+        <!-- <property name="connection.username"/> -->
+        <!-- <property name="connection.password"/> -->
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>

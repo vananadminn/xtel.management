@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+
+    <link_subtract_monney><![CDATA[http://...../api/get?action=charge&msisdn=@msisdn&fee=1000&reason=ORDER&channel=SYS&pkgCode=CSMM&pkgName=CSMM&cateid=000001&contentid=001]]></link_subtract_monney>
+
+    <link_sendmt><![CDATA[http://..../api/get?action=sendmt&msisdn=@msisdn&content=@content]]></link_sendmt>
+
+    <path_message>D:\Work\JavaProject\Unique_min\config\message.txt</path_message>
+
+    <reward_session>giai_thuong</reward_session>
+    <syntax_order>dg</syntax_order>
+    <time_end_session>19:59:59</time_end_session>
+
+    <package_id_normal>IP</package_id_normal>
+    <phone_head>6333</phone_head>
+    <free_sms_normal>5</free_sms_normal>
+    <package_id_vip>VP</package_id_vip>
+    <free_sms_vip>10</free_sms_vip>
+
+    <package_rule>MIN</package_rule>
+
+
+<!--chưa dùng-->
+    <max_queue_size>500000</max_queue_size>
+    <time_delay_queue>5000</time_delay_queue>
+    <format_msisdn>84</format_msisdn>
+    <service_id>135</service_id>
+    <http_timeout>30000</http_timeout>
+
+    <max_tps_mt>100</max_tps_mt>
+    <score_for_win_every_day>50</score_for_win_every_day>
+    <score_for_play_sms>10</score_for_play_sms>
+    <min_order_quantity>5</min_order_quantity>
+    <max_valid_number>100000</max_valid_number>
+
+    <score_win_everyday>50</score_win_everyday>
+
+    <mt_queue_table>mt_queue</mt_queue_table>
+    <mt_queue_start_session>mt_queue_temp_1</mt_queue_start_session>
+    <mt_queue_end_session>mt_queue_temp_2</mt_queue_end_session>
+
+    <time_start_session_everyday>08:00</time_start_session_everyday>    <!--thoi gian bat dau 1 phien hang ngay-->
+    <time_end_session_everyday>22:00</time_end_session_everyday>        <!--thoi gian ket thuc phien hang ngay -->
+
+    <quartz_result_every_day><![CDATA[00 01 22 * * ?]]></quartz_result_every_day>
+    <quartz_reset_state_every_day><![CDATA[00 01 1 * * ?]]></quartz_reset_state_every_day>
+    <quartz_reset_score_every_week><![CDATA[0 0 1 ? * MON *]]></quartz_reset_score_every_week>
+
+    <link_webservice>http://0.0.0.0:9234/api</link_webservice>
+</configuration>
