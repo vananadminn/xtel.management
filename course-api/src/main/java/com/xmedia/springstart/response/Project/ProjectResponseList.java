@@ -1,6 +1,6 @@
 package com.xmedia.springstart.response.Project;
 
-import com.xmedia.springstart.model.Project;
+import com.xmedia.springstart.model.Project.Project;
 import com.xmedia.springstart.response.BaseResponse.BaseResponse;
 import org.springframework.stereotype.Component;
 

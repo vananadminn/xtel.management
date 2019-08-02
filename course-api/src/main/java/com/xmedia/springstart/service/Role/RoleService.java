@@ -2,7 +2,7 @@ package com.xmedia.springstart.service.Role;
 
 import java.util.List;
 
-import com.xmedia.springstart.model.Role;
+import com.xmedia.springstart.model.Role.Role;
 import com.xmedia.springstart.repository.RoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

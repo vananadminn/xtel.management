@@ -1,13 +1,12 @@
 package com.xmedia.springstart.repository;
 
-import com.xmedia.springstart.ResponseModel.SkillEmployee;
-import com.xmedia.springstart.model.Employee;
-import com.xmedia.springstart.response.Employee.EmployeeExperienceResponse;
+import com.xmedia.springstart.data_query_model.SkillEmployee;
+import com.xmedia.springstart.model.Employee.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
-
 import java.util.Date;
 import java.util.List;
 
@@ -65,15 +64,15 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
     String checkEmployeeName(@Param("name") String name);
 
     /*return list experience of an employee*/
-    @Query(value = "select ee.employee_id as id , e.name as name , e.email as email, s.name as skillName, ex.start as start, ex.now as now FROM employee e join employee_experience ee on e.id = ee.employee_id join experience ex on ex.id = ee.experience_id join skill s on s.id = ee.skills_id where s.name = :name", nativeQuery = true)
-    List<EmployeeExperienceResponse> experienceEmployee(@Param("name") String name);
+//    @Query(value = "select ee.employee_id as id , e.name as name , e.email as email, s.name as skillName, ex.start as start, ex.now as now FROM employee e join employee_experience ee on e.id = ee.employee_id join experience ex on ex.id = ee.experience_id join skill s on s.id = ee.skills_id where s.name = :name", nativeQuery = true)
+//    List<EmployeeExperienceResponse> experienceEmployee(@Param("name") String name);
 
     /*return an skill name if variable param is exists param value*/
     @Query(value = "select s.name from Skill s where s.name = :name", nativeQuery = true)
     String findSkillName(@Param("name") String name);
 
     /*add new skill for employee*/
+    @Modifying
     @Query(value = "insert into skills_employees(employees_id, skills_id, created_by) values (?1, ?2, ?3)", nativeQuery = true)
     List<SkillEmployee> createSkillEmployee(@Param("idEmployee") int idEmployee, @Param("idSkill") int idSkill, @Param("createdBy") String createdBy);
-
 }

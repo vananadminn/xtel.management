@@ -1,7 +1,7 @@
 package com.xmedia.springstart.service.Role;
 
 import java.util.List;
-import com.xmedia.springstart.model.Role;
+import com.xmedia.springstart.model.Role.Role;
 import org.springframework.stereotype.Component;
 
 @Component

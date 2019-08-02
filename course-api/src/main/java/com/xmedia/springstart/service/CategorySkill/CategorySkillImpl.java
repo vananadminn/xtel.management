@@ -1,8 +1,7 @@
 package com.xmedia.springstart.service.CategorySkill;
 
-import com.xmedia.springstart.model.CategorySkill;
+import com.xmedia.springstart.model.CategorySkill.CategorySkill;
 
-import java.awt.*;
 import java.util.List;
 
 public interface CategorySkillImpl {

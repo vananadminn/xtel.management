@@ -1,6 +1,6 @@
 package com.xmedia.springstart.response.Customer;
 
-import com.xmedia.springstart.model.Customers;
+import com.xmedia.springstart.model.Customer.Customers;
 import com.xmedia.springstart.response.BaseResponse.BaseResponse;
 import org.springframework.stereotype.Component;
 

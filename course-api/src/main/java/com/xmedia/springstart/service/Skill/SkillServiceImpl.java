@@ -1,6 +1,6 @@
 package com.xmedia.springstart.service.Skill;
 
-import com.xmedia.springstart.model.Skill;
+import com.xmedia.springstart.model.Skill.Skill;
 import java.util.List;
 
 public interface SkillServiceImpl {

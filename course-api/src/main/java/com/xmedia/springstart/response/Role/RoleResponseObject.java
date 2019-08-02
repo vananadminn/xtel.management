@@ -1,6 +1,6 @@
 package com.xmedia.springstart.response.Role;
 
-import com.xmedia.springstart.model.Role;
+import com.xmedia.springstart.model.Role.Role;
 import com.xmedia.springstart.response.BaseResponse.BaseResponse;
 import org.springframework.stereotype.Component;
 

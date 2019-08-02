@@ -1,6 +1,6 @@
 package com.xmedia.springstart.service.Project;
 
-import com.xmedia.springstart.model.Project;
+import com.xmedia.springstart.model.Project.Project;
 
 import java.util.List;
 

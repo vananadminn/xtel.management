@@ -1,6 +1,6 @@
 package com.xmedia.springstart.service.Employee;
 
-import com.xmedia.springstart.model.Employee;
+import com.xmedia.springstart.model.Employee.Employee;
 
 import java.util.List;
 

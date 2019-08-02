@@ -1,6 +1,6 @@
 package com.xmedia.springstart.service.Skill;
 
-import com.xmedia.springstart.model.Skill;
+import com.xmedia.springstart.model.Skill.Skill;
 import com.xmedia.springstart.repository.SkillRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
 package com.xmedia.springstart.response.CategorySkill;
 
-import com.xmedia.springstart.model.CategorySkill;
+import com.xmedia.springstart.model.CategorySkill.CategorySkill;
 import com.xmedia.springstart.response.BaseResponse.BaseResponse;
 
 public class CategorySkillObject extends BaseResponse {

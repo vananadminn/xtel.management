@@ -1,38 +1,34 @@
 package com.xmedia.springstart.response.Employee;
 
 import com.xmedia.springstart.response.BaseResponse.BaseResponse;
+import com.xmedia.springstart.data_query_model.Employee.EmployeeSkill;
 import org.springframework.stereotype.Component;
+
+import java.util.List;
 
 @Component
 public class EmployeeSkillResponse extends BaseResponse {
 
-    private String name;
-    private int totalSkill;
+    private List<EmployeeSkill> list;
 
     public EmployeeSkillResponse() {
 
     }
 
-    public EmployeeSkillResponse(String message, int code, String name, int totalSkill) {
-        this.setMessage(message);
-        this.setCode(code);
-        this.name = name;
-        this.totalSkill = totalSkill;
+    public EmployeeSkillResponse(List<EmployeeSkill> list) {
+        this.list = list;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public EmployeeSkillResponse(String message, int code, List<EmployeeSkill> list) {
+        super(message, code);
+        this.list = list;
     }
 
-    public String getName() {
-        return name;
+    public List<EmployeeSkill> getList() {
+        return list;
     }
 
-    public int getTotalSkill() {
-        return totalSkill;
-    }
-
-    public void setTotalSkill(int totalSkill) {
-        this.totalSkill = totalSkill;
+    public void setList(List<EmployeeSkill> list) {
+        this.list = list;
     }
 }

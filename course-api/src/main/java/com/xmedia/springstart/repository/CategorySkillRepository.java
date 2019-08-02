@@ -1,6 +1,6 @@
 package com.xmedia.springstart.repository;
 
-import com.xmedia.springstart.model.CategorySkill;
+import com.xmedia.springstart.model.CategorySkill.CategorySkill;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

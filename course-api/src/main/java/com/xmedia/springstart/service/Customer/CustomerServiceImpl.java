@@ -1,6 +1,6 @@
 package com.xmedia.springstart.service.Customer;
 
-import com.xmedia.springstart.model.Customers;
+import com.xmedia.springstart.model.Customer.Customers;
 
 import java.util.List;
 

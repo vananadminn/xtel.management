@@ -1,6 +1,6 @@
 package com.xmedia.springstart.service.CategorySkill;
 
-import com.xmedia.springstart.model.CategorySkill;
+import com.xmedia.springstart.model.CategorySkill.CategorySkill;
 import com.xmedia.springstart.repository.CategorySkillRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

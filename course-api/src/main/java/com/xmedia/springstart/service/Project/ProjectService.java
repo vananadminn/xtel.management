@@ -1,6 +1,6 @@
 package com.xmedia.springstart.service.Project;
 
-import com.xmedia.springstart.model.Project;
+import com.xmedia.springstart.model.Project.Project;
 import com.xmedia.springstart.repository.ProjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

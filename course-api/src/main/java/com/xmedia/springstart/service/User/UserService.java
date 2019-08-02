@@ -2,7 +2,7 @@ package com.xmedia.springstart.service.User;
 
 import java.util.List;
 
-import com.xmedia.springstart.model.User;
+import com.xmedia.springstart.model.User.User;
 import com.xmedia.springstart.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

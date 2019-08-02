@@ -1,7 +1,7 @@
 package com.xmedia.springstart.response.Skill;
 
 import com.xmedia.springstart.response.BaseResponse.BaseResponse;
-import com.xmedia.springstart.ResponseModel.SeResponse;
+import com.xmedia.springstart.data_query_model.SeResponse;
 import org.springframework.stereotype.Component;
 
 @Component

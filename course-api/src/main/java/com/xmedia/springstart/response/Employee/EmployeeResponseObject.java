@@ -1,6 +1,6 @@
 package com.xmedia.springstart.response.Employee;
 
-import com.xmedia.springstart.model.Employee;
+import com.xmedia.springstart.model.Employee.Employee;
 import com.xmedia.springstart.response.BaseResponse.BaseResponse;
 import org.springframework.stereotype.Component;
 

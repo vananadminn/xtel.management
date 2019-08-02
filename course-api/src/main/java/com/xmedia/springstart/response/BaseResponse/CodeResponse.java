@@ -53,4 +53,17 @@ public class CodeResponse {
 
     public final String GET_NAME_NOT_EXIST = "The name does't exist";
     public final int CODE_GET_NAME_NOT_EXIST = -899;
+
+    public final String GET_EMPLOYEE_EXISTS_SKILL = "This employee has survived skills: ";
+    public final int CODE_EMPLOYEE_EXISTS_SKILL = -999;
+
+    public final String GET_EMPLOYEE_NEXISTS_ID = "Employee id not found ";
+    public final int CODE_EMPLOYEE_NEXISTS_ID = -1099;
+
+    public final String GET_EMPLOYEE_NAME_NOTFOUND = "Employee name not found ";
+    public final int CODE_GET_EMPLOYEE_NAME_NOTFOUND = -1199;
+
+    public final String GET_SKILL_ID_NOTFOUND = "Skill id not found ";
+    public final int CODE_SKILL_ID_NOTFOUND = -1199;
+
 }

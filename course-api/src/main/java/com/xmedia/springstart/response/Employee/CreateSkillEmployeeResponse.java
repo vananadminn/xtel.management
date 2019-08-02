@@ -1,28 +1,28 @@
 package com.xmedia.springstart.response.Employee;
 
-import com.xmedia.springstart.ResponseModel.SkillEmployee;
+import com.xmedia.springstart.model.Skill.SkillsEmployees;
 import com.xmedia.springstart.response.BaseResponse.BaseResponse;
+import org.springframework.stereotype.Component;
 
-import java.util.List;
-
+@Component
 public class CreateSkillEmployeeResponse extends BaseResponse {
 
-    private List<SkillEmployee> skillEmployeeList;
+    private SkillsEmployees skillEmployee;
 
     public CreateSkillEmployeeResponse() {
 
     }
 
-    public CreateSkillEmployeeResponse(String message, int code, List<SkillEmployee> skillEmployeeList) {
+    public CreateSkillEmployeeResponse(String message, int code, SkillsEmployees skillEmployee) {
         super(message, code);
-        this.skillEmployeeList = skillEmployeeList;
+        this.skillEmployee = skillEmployee;
     }
 
-    public List<SkillEmployee> getSkillEmployeeList() {
-        return skillEmployeeList;
+    public SkillsEmployees getSkillEmployee() {
+        return skillEmployee;
     }
 
-    public void setSkillEmployeeList(List<SkillEmployee> skillEmployeeList) {
-        this.skillEmployeeList = skillEmployeeList;
+    public void setSkillEmployee(SkillsEmployees skillEmployee) {
+        this.skillEmployee = skillEmployee;
     }
 }

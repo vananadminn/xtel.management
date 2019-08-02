@@ -1,6 +1,6 @@
 package com.xmedia.springstart.response.Skill;
 
-import com.xmedia.springstart.model.Skill;
+import com.xmedia.springstart.model.Skill.Skill;
 import com.xmedia.springstart.response.BaseResponse.BaseResponse;
 import org.springframework.stereotype.Component;
 

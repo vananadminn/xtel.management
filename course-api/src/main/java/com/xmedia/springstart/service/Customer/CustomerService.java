@@ -1,7 +1,7 @@
 package com.xmedia.springstart.service.Customer;
 
 
-import com.xmedia.springstart.model.Customers;
+import com.xmedia.springstart.model.Customer.Customers;
 import com.xmedia.springstart.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

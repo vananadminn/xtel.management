@@ -1,10 +1,8 @@
 package com.xmedia.springstart.service.Employee;
 
-import com.xmedia.springstart.ResponseModel.SkillEmployee;
-import com.xmedia.springstart.model.Employee;
+import com.xmedia.springstart.data_query_model.SkillEmployee;
+import com.xmedia.springstart.model.Employee.Employee;
 import com.xmedia.springstart.repository.EmployeeRepository;
-import com.xmedia.springstart.response.Employee.EmployeeExperienceResponse;
-import com.xmedia.springstart.response.Employee.EmployeeExperienceTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -86,10 +84,6 @@ public class EmployeeService implements EmployeeServiceImpl {
         return employeeRepository.checkEmployeeName(name);
     }
 
-    public List<EmployeeExperienceResponse> experienceEmployee(String name) {
-        return employeeRepository.experienceEmployee(name);
-    }
-
     public String findSkillName(String name) {
         return employeeRepository.findSkillName(name);
     }
@@ -97,4 +91,5 @@ public class EmployeeService implements EmployeeServiceImpl {
     public List<SkillEmployee> createSkillEmployee(int idEMployee, int idSkill, String createdBy) {
         return employeeRepository.createSkillEmployee(idEMployee, idSkill, createdBy);
     }
+
 }

@@ -1,6 +1,6 @@
 package com.xmedia.springstart.response.User;
 
-import com.xmedia.springstart.model.User;
+import com.xmedia.springstart.model.User.User;
 import com.xmedia.springstart.response.BaseResponse.BaseResponse;
 import org.springframework.stereotype.Component;
 

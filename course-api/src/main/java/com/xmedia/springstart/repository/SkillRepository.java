@@ -1,6 +1,6 @@
 package com.xmedia.springstart.repository;
 
-import com.xmedia.springstart.model.Skill;
+import com.xmedia.springstart.model.Skill.Skill;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
